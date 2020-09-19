@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"lider7214.cn","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="线性代数学习，先去培养形象的几何感知，然后用稳固的逻辑训练加固。">
+  <meta name="description" content="线性代数 —— 用形象的几何感知和逻辑的计算方法去解决实际工程中的问题 更新中… Part 1 理解性文章（在总结之后写） Part 2 不同渠道的线代学习总结 。。。ing Part 3 参考资料">
 <meta property="og:type" content="article">
 <meta property="og:title" content="013 线性代数学习与提升">
 <meta property="og:url" content="lider7214.cn/2020/05/16/013%20%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/index.html">
 <meta property="og:site_name" content="长夜未央">
-<meta property="og:description" content="线性代数学习，先去培养形象的几何感知，然后用稳固的逻辑训练加固。">
+<meta property="og:description" content="线性代数 —— 用形象的几何感知和逻辑的计算方法去解决实际工程中的问题 更新中… Part 1 理解性文章（在总结之后写） Part 2 不同渠道的线代学习总结 。。。ing Part 3 参考资料">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-16T04:00:54.261Z">
-<meta property="article:modified_time" content="2020-09-12T01:50:34.278Z">
+<meta property="article:modified_time" content="2020-09-19T11:33:09.866Z">
 <meta property="article:author" content="Lider">
 <meta name="twitter:card" content="summary">
 
@@ -184,7 +184,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-12 09:50:34" itemprop="dateModified" datetime="2020-09-12T09:50:34+08:00">2020-09-12</time>
+                <time title="修改时间：2020-09-19 19:33:09" itemprop="dateModified" datetime="2020-09-19T19:33:09+08:00">2020-09-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -207,10 +207,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>线性代数学习，先去培养形象的几何感知，然后用稳固的逻辑训练加固。</p>
+        <p>线性代数 —— 用形象的几何感知和逻辑的计算方法去解决实际工程中的问题</p>
+<p>更新中…</p>
+<p>Part 1 理解性文章（在总结之后写）</p>
+<p>Part 2 不同渠道的线代学习总结 。。。ing</p>
+<p>Part 3 参考资料</p>
 <a id="more"></a>
 
-<h1 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h1><h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><h1 id="线性方程组"><a href="#线性方程组" class="headerlink" title="线性方程组"></a>线性方程组</h1><h1 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h1><h1 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h1>
+<h1 id="向量-vectors"><a href="#向量-vectors" class="headerlink" title="向量 vectors"></a>向量 vectors</h1><p>线性代数是一门语言，需要从语言的角度理解其中的变换，我们所学习的有几何直观层面的解释和计算方法的应用，几何更重要、计算次之，二者结合起来应用到各个领域解决实际问题。</p>
+<h2 id="What-exactly-a-vector-is"><a href="#What-exactly-a-vector-is" class="headerlink" title="What exactly a vector is"></a>What exactly a vector is</h2><h3 id="向量的表示"><a href="#向量的表示" class="headerlink" title="向量的表示"></a>向量的表示</h3><blockquote>
+<p>物理专业： 箭头<br>数学专业：vector<br>计算机专业：矩阵，ordered list of numbers</p>
+</blockquote>
+<h3 id="向量在坐标系"><a href="#向量在坐标系" class="headerlink" title="向量在坐标系"></a>向量在坐标系</h3><p>vector coordinates</p>
+<h2 id="向量加法和数乘-vector-addition-and-multiplication-by-numbers"><a href="#向量加法和数乘-vector-addition-and-multiplication-by-numbers" class="headerlink" title="向量加法和数乘 vector addition and multiplication by numbers"></a>向量加法和数乘 vector addition and multiplication by numbers</h2><p>i and j are the basis vectors of two scaled vectors<br>坐标是对（i,j）的拉伸</p>
+<h1 id="linear-combination-of-v-and-w线性组合、张成的空间与基"><a href="#linear-combination-of-v-and-w线性组合、张成的空间与基" class="headerlink" title="linear combination of v and w线性组合、张成的空间与基"></a>linear combination of <strong>v</strong> and <strong>w</strong>线性组合、张成的空间与基</h1><h2 id="linear-combination"><a href="#linear-combination" class="headerlink" title="linear combination"></a>linear combination</h2><p>multiplication = scaling</p>
+<h2 id="span"><a href="#span" class="headerlink" title="span"></a>span</h2><p>linearly independent</p>
+<p>linearly dependent</p>
+<h2 id="basis"><a href="#basis" class="headerlink" title="basis"></a>basis</h2><h1 id="linear-transformations-矩阵与线性变换"><a href="#linear-transformations-矩阵与线性变换" class="headerlink" title="linear transformations 矩阵与线性变换"></a>linear transformations 矩阵与线性变换</h1><h1 id="Composition-矩阵乘法与线性变换的复合"><a href="#Composition-矩阵乘法与线性变换的复合" class="headerlink" title="Composition 矩阵乘法与线性变换的复合"></a>Composition 矩阵乘法与线性变换的复合</h1><h1 id="3-D-dimension-三维空间的线性变换"><a href="#3-D-dimension-三维空间的线性变换" class="headerlink" title="3-D dimension 三维空间的线性变换"></a>3-D dimension 三维空间的线性变换</h1><h1 id="The-determinant-行列式"><a href="#The-determinant-行列式" class="headerlink" title="The determinant 行列式"></a>The determinant 行列式</h1><h1 id="linear-system-of-equations，Inverse-matrices、columns-and-null-space-线性方程组，逆矩阵、列空间与零空间"><a href="#linear-system-of-equations，Inverse-matrices、columns-and-null-space-线性方程组，逆矩阵、列空间与零空间" class="headerlink" title="linear system of equations，Inverse matrices、columns and null space 线性方程组，逆矩阵、列空间与零空间"></a>linear system of equations，Inverse matrices、columns and null space 线性方程组，逆矩阵、列空间与零空间</h1><h1 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h1><h1 id="referance-参考资料"><a href="#referance-参考资料" class="headerlink" title="referance 参考资料"></a>referance 参考资料</h1><p><a href="https://www.bilibili.com/video/BV1ys411472E" target="_blank" rel="noopener">1 直观理解线代的视频</a></p>
+<p>2 书籍：线性代数及其应用 第五版 美 David C.Lay</p>
+
     </div>
 
     
@@ -291,7 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#行列式"><span class="nav-number">1.</span> <span class="nav-text">行列式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#矩阵"><span class="nav-number">2.</span> <span class="nav-text">矩阵</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性方程组"><span class="nav-number">3.</span> <span class="nav-text">线性方程组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特征值与特征向量"><span class="nav-number">4.</span> <span class="nav-text">特征值与特征向量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二次型"><span class="nav-number">5.</span> <span class="nav-text">二次型</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#向量-vectors"><span class="nav-number">1.</span> <span class="nav-text">向量 vectors</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-exactly-a-vector-is"><span class="nav-number">1.1.</span> <span class="nav-text">What exactly a vector is</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#向量的表示"><span class="nav-number">1.1.1.</span> <span class="nav-text">向量的表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向量在坐标系"><span class="nav-number">1.1.2.</span> <span class="nav-text">向量在坐标系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量加法和数乘-vector-addition-and-multiplication-by-numbers"><span class="nav-number">1.2.</span> <span class="nav-text">向量加法和数乘 vector addition and multiplication by numbers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linear-combination-of-v-and-w线性组合、张成的空间与基"><span class="nav-number">2.</span> <span class="nav-text">linear combination of v and w线性组合、张成的空间与基</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-combination"><span class="nav-number">2.1.</span> <span class="nav-text">linear combination</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#span"><span class="nav-number">2.2.</span> <span class="nav-text">span</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basis"><span class="nav-number">2.3.</span> <span class="nav-text">basis</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linear-transformations-矩阵与线性变换"><span class="nav-number">3.</span> <span class="nav-text">linear transformations 矩阵与线性变换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Composition-矩阵乘法与线性变换的复合"><span class="nav-number">4.</span> <span class="nav-text">Composition 矩阵乘法与线性变换的复合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-D-dimension-三维空间的线性变换"><span class="nav-number">5.</span> <span class="nav-text">3-D dimension 三维空间的线性变换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#The-determinant-行列式"><span class="nav-number">6.</span> <span class="nav-text">The determinant 行列式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linear-system-of-equations，Inverse-matrices、columns-and-null-space-线性方程组，逆矩阵、列空间与零空间"><span class="nav-number">7.</span> <span class="nav-text">linear system of equations，Inverse matrices、columns and null space 线性方程组，逆矩阵、列空间与零空间</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特征值与特征向量"><span class="nav-number">8.</span> <span class="nav-text">特征值与特征向量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#referance-参考资料"><span class="nav-number">9.</span> <span class="nav-text">referance 参考资料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
