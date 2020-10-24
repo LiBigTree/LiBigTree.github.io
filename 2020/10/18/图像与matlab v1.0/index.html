@@ -20,29 +20,31 @@
     var CONFIG = {"hostname":"lider7214.cn","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="记录和分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="长夜未央">
-<meta property="og:url" content="lider7214.cn/index.html">
+  <meta name="description" content="开篇要义：编程 Q:如何学习一个新概念？ A:我会找个教程&#x2F;文档例子，把代码逐行敲一遍，感觉就像是我自己写的一样，一旦完成，我会从头重写一遍，添加注释，并根据自己的用例修改它。  学习建议：把基本的知识看过之后，就需要找一个实际的程序来动手编一下，不要等所有的知识都学好之后再去编程，你要在编程的过程中学习，程序需要什么知识再去补充（这一条是别人教我的，很管用），编程是一点一点积累的，所以你要需做一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图像与matlab">
+<meta property="og:url" content="lider7214.cn/2020/10/18/%E5%9B%BE%E5%83%8F%E4%B8%8Ematlab%20v1.0/index.html">
 <meta property="og:site_name" content="长夜未央">
-<meta property="og:description" content="记录和分享">
+<meta property="og:description" content="开篇要义：编程 Q:如何学习一个新概念？ A:我会找个教程&#x2F;文档例子，把代码逐行敲一遍，感觉就像是我自己写的一样，一旦完成，我会从头重写一遍，添加注释，并根据自己的用例修改它。  学习建议：把基本的知识看过之后，就需要找一个实际的程序来动手编一下，不要等所有的知识都学好之后再去编程，你要在编程的过程中学习，程序需要什么知识再去补充（这一条是别人教我的，很管用），编程是一点一点积累的，所以你要需做一">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-18T08:13:09.059Z">
+<meta property="article:modified_time" content="2020-10-24T08:55:04.674Z">
 <meta property="article:author" content="Lider">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="lider7214.cn/">
+<link rel="canonical" href="lider7214.cn/2020/10/18/%E5%9B%BE%E5%83%8F%E4%B8%8Ematlab%20v1.0/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>长夜未央</title>
+  <title>图像与matlab | 长夜未央</title>
   
 
 
@@ -148,80 +150,10 @@
             
 
   <div class="posts-expand">
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/10/22/%E9%87%8D%E6%9E%84%E2%80%94%E2%80%94%E7%BD%91%E7%AB%99%E5%B8%83%E5%B1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/22/%E9%87%8D%E6%9E%84%E2%80%94%E2%80%94%E7%BD%91%E7%AB%99%E5%B8%83%E5%B1%80/" class="post-title-link" itemprop="url">十月，网站重构</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-22 12:16:05 / 修改时间：12:27:53" itemprop="dateCreated datePublished" datetime="2020-10-22T12:16:05+08:00">2020-10-22</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB-%E4%B8%AA%E4%BA%BA%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">生活 个人规划</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
-          <p>内容应该是经过思考的</p>
-<p>分类应该是简约的</p>
-<p>宁缺毋滥——“如无必要，勿增实体”</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
   
   
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/10/18/%E5%9B%BE%E5%83%8F%E4%B8%8Ematlab%20v1.0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -235,8 +167,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/18/%E5%9B%BE%E5%83%8F%E4%B8%8Ematlab%20v1.0/" class="post-title-link" itemprop="url">图像与matlab</a>
+          图像与matlab
         </h1>
 
         <div class="post-meta">
@@ -276,7 +207,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="开篇要义：编程"><a href="#开篇要义：编程" class="headerlink" title="开篇要义：编程"></a>开篇要义：编程</h1><blockquote>
+        <h1 id="开篇要义：编程"><a href="#开篇要义：编程" class="headerlink" title="开篇要义：编程"></a>开篇要义：编程</h1><blockquote>
 <p>Q:如何学习一个新概念？</p>
 <p>A:我会找个教程/文档例子，把代码逐行敲一遍，感觉就像是我自己写的一样，一旦完成，我会从头重写一遍，添加注释，并根据自己的用例修改它。</p>
 </blockquote>
@@ -401,670 +332,36 @@
 <p>||  或</p>
 <h3 id="变量预分配"><a href="#变量预分配" class="headerlink" title="变量预分配"></a>变量预分配</h3><p>（尤其循环语句之前）<br>在对矩阵进行计算时，预设矩阵的大小会加快运算速度。因为这样每次计算时系统就不用就算矩阵大小并分配空间了。<br>*其他更多知识日后项目中逐渐补充。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/09/24/045%20%E4%B9%9D%E6%9C%88%E6%80%BB%E7%BB%93/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/24/045%20%E4%B9%9D%E6%9C%88%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">九月，开学</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-24 17:33:22" itemprop="dateCreated datePublished" datetime="2020-09-24T17:33:22+08:00">2020-09-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:27:27" itemprop="dateModified" datetime="2020-10-22T12:27:27+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB-%E4%B8%AA%E4%BA%BA%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">生活 个人规划</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>九月，2020年下半年</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/24/045%20%E4%B9%9D%E6%9C%88%E6%80%BB%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/24/045%20%E4%B9%9D%E6%9C%88%E6%80%BB%E7%BB%93/" rel="prev" title="九月，开学">
+      <i class="fa fa-chevron-left"></i> 九月，开学
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/22/%E9%87%8D%E6%9E%84%E2%80%94%E2%80%94%E7%BD%91%E7%AB%99%E5%B8%83%E5%B1%80/" rel="next" title="十月，网站重构">
+      十月，网站重构 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/09/12/040%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E5%BA%94%E7%94%A8%E7%BB%9F%E8%AE%A1%E5%AD%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/12/040%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E5%BA%94%E7%94%A8%E7%BB%9F%E8%AE%A1%E5%AD%A6/" class="post-title-link" itemprop="url">应用统计学</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-12 08:30:48" itemprop="dateCreated datePublished" datetime="2020-09-12T08:30:48+08:00">2020-09-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:27:21" itemprop="dateModified" datetime="2020-10-22T12:27:21+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF-%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" itemprop="url" rel="index"><span itemprop="name">技术 基础学科</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>统天下，计未来。</p>
-<p>工程建设中的科学管理法，涉及资料的整合、利用等</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/12/040%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E5%BA%94%E7%94%A8%E7%BB%9F%E8%AE%A1%E5%AD%A6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/09/01/039%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E6%88%BF%E5%B1%8B%E5%BB%BA%E7%AD%91%E5%AD%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/01/039%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E6%88%BF%E5%B1%8B%E5%BB%BA%E7%AD%91%E5%AD%A6/" class="post-title-link" itemprop="url">房屋建筑学</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-01 11:51:47" itemprop="dateCreated datePublished" datetime="2020-09-01T11:51:47+08:00">2020-09-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:19:47" itemprop="dateModified" datetime="2020-10-22T12:19:47+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF-%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" itemprop="url" rel="index"><span itemprop="name">技术 基础学科</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>在我看来，房屋建筑学就是工程管理中工程二字的概论课，其对工程技术的应用做了一个整体的描述。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/01/039%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E6%88%BF%E5%B1%8B%E5%BB%BA%E7%AD%91%E5%AD%A6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/09/01/038%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E6%AF%9B%E6%A6%82%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/01/038%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E6%AF%9B%E6%A6%82%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">毛泽东思想和中国特色社会主义概论</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-01 08:56:27" itemprop="dateCreated datePublished" datetime="2020-09-01T08:56:27+08:00">2020-09-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:19:53" itemprop="dateModified" datetime="2020-10-22T12:19:53+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF-%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" itemprop="url" rel="index"><span itemprop="name">技术 基础学科</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>思想指南与前进路上的信条</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/01/038%20%5B%E5%B7%A5%E7%A8%8B%E7%AE%A1%E7%90%86%5D%E6%AF%9B%E6%A6%82%E6%80%BB%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/08/31/037%20%E5%85%AB%E6%9C%88%E5%BA%95%E6%80%BB%E7%BB%93%E5%92%8C%E4%B9%9D%E6%9C%88%E8%AE%A1%E5%88%92/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/31/037%20%E5%85%AB%E6%9C%88%E5%BA%95%E6%80%BB%E7%BB%93%E5%92%8C%E4%B9%9D%E6%9C%88%E8%AE%A1%E5%88%92/" class="post-title-link" itemprop="url">八月底总结和九月计划</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-31 17:42:25" itemprop="dateCreated datePublished" datetime="2020-08-31T17:42:25+08:00">2020-08-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:27:05" itemprop="dateModified" datetime="2020-10-22T12:27:05+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB-%E4%B8%AA%E4%BA%BA%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">生活 个人规划</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>开学</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/31/037%20%E5%85%AB%E6%9C%88%E5%BA%95%E6%80%BB%E7%BB%93%E5%92%8C%E4%B9%9D%E6%9C%88%E8%AE%A1%E5%88%92/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/08/21/034%20%E7%94%9F%E6%B4%BB%E7%9A%84%E4%BF%AE%E8%A1%8C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/21/034%20%E7%94%9F%E6%B4%BB%E7%9A%84%E4%BF%AE%E8%A1%8C/" class="post-title-link" itemprop="url">生活的修行</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-21 23:45:58" itemprop="dateCreated datePublished" datetime="2020-08-21T23:45:58+08:00">2020-08-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:27:01" itemprop="dateModified" datetime="2020-10-22T12:27:01+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB-%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">生活 思考感悟</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>做生活的加法和减法</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/21/034%20%E7%94%9F%E6%B4%BB%E7%9A%84%E4%BF%AE%E8%A1%8C/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/08/15/032%20%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%A7%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/15/032%20%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%A7%82/" class="post-title-link" itemprop="url">发展观</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-15 22:22:50" itemprop="dateCreated datePublished" datetime="2020-08-15T22:22:50+08:00">2020-08-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-22 12:26:56" itemprop="dateModified" datetime="2020-10-22T12:26:56+08:00">2020-10-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB-%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">生活 思考感悟</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><strong>对个人来说，要担心的不是人工智能抢饭碗的事情，更多应该担心自己的知识和能力储备不够，被别人抢饭碗的问题。</strong></p>
-<p><strong>人类的能力也一定会适应社会的新变化。</strong></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="lider7214.cn/2020/08/15/031%20%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%B5%81%E7%A8%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lider">
-      <meta itemprop="description" content="记录和分享">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="长夜未央">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/15/031%20%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%B5%81%E7%A8%8B/" class="post-title-link" itemprop="url">031 做社会调研的反思总结</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-15 07:07:36" itemprop="dateCreated datePublished" datetime="2020-08-15T07:07:36+08:00">2020-08-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-03 21:01:57" itemprop="dateModified" datetime="2020-10-03T21:01:57+08:00">2020-10-03</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB-%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">生活 思考感悟</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>前期的准备工作往往是最长的，但考虑的越多，后期进行的就越顺利。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/15/031%20%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E7%9A%84%E6%B5%81%E7%A8%8B/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
   </article>
   
   
   
 
   </div>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
 
 
           </div>
@@ -1115,6 +412,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开篇要义：编程"><span class="nav-number">1.</span> <span class="nav-text">开篇要义：编程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#培训导论"><span class="nav-number">2.</span> <span class="nav-text">培训导论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-number">3.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#图像导入与格式转换"><span class="nav-number">3.1.</span> <span class="nav-text">图像导入与格式转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像增强——直方图均衡化"><span class="nav-number">3.2.</span> <span class="nav-text">图像增强——直方图均衡化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理说明"><span class="nav-number">3.2.1.</span> <span class="nav-text">原理说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法实现"><span class="nav-number">3.2.2.</span> <span class="nav-text">算法实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数实现"><span class="nav-number">3.2.3.</span> <span class="nav-text">函数实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像几何变化——图像缩放"><span class="nav-number">3.3.</span> <span class="nav-text">图像几何变化——图像缩放</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像噪声的抑制——均值滤波"><span class="nav-number">3.4.</span> <span class="nav-text">图像噪声的抑制——均值滤波</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算法说明"><span class="nav-number">3.4.1.</span> <span class="nav-text">算法说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">3.4.2.</span> <span class="nav-text">代码实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像的锐化处理——sobel算子"><span class="nav-number">3.5.</span> <span class="nav-text">图像的锐化处理——sobel算子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理"><span class="nav-number">3.5.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现-1"><span class="nav-number">3.5.2.</span> <span class="nav-text">代码实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二值图像的处理——腐蚀膨胀、开运算闭运算"><span class="nav-number">3.6.</span> <span class="nav-text">二值图像的处理——腐蚀膨胀、开运算闭运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理-1"><span class="nav-number">3.6.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#matlab代码"><span class="nav-number">3.6.2.</span> <span class="nav-text">matlab代码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附录"><span class="nav-number">4.</span> <span class="nav-text">附录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB-运算符"><span class="nav-number">4.1.</span> <span class="nav-text">MATLAB 运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量（Variables）"><span class="nav-number">4.2.</span> <span class="nav-text">变量（Variables）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型-Numeric-Variable-Data-Type"><span class="nav-number">4.3.</span> <span class="nav-text">数据类型 (Numeric Variable (Data) Type)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑型（logical）"><span class="nav-number">4.3.1.</span> <span class="nav-text">逻辑型（logical）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符型（char）"><span class="nav-number">4.3.2.</span> <span class="nav-text">字符型（char）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数值型（numeric）"><span class="nav-number">4.3.3.</span> <span class="nav-text">数值型（numeric）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元胞数组（cell）"><span class="nav-number">4.3.4.</span> <span class="nav-text">元胞数组（cell）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构体（structure）"><span class="nav-number">4.3.5.</span> <span class="nav-text">结构体（structure）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格（table）"><span class="nav-number">4.3.6.</span> <span class="nav-text">表格（table）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数句柄（function-handle）"><span class="nav-number">4.3.7.</span> <span class="nav-text">函数句柄（function handle）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matlab界面"><span class="nav-number">4.4.</span> <span class="nav-text">matlab界面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组（向量和矩阵）"><span class="nav-number">4.5.</span> <span class="nav-text">数组（向量和矩阵）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#向量和矩阵"><span class="nav-number">4.5.1.</span> <span class="nav-text">向量和矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩阵的运算及索引"><span class="nav-number">4.5.2.</span> <span class="nav-text">矩阵的运算及索引</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚本文件"><span class="nav-number">4.6.</span> <span class="nav-text">脚本文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本文件-1"><span class="nav-number">4.6.1.</span> <span class="nav-text">脚本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制语句和逻辑判断"><span class="nav-number">4.6.2.</span> <span class="nav-text">控制语句和逻辑判断</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#循环语句"><span class="nav-number">4.6.2.1.</span> <span class="nav-text">循环语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#判断语句"><span class="nav-number">4.6.2.2.</span> <span class="nav-text">判断语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑判断"><span class="nav-number">4.6.2.3.</span> <span class="nav-text">逻辑判断</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量预分配"><span class="nav-number">4.6.3.</span> <span class="nav-text">变量预分配</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1223,16 +521,6 @@
   
 
   
-  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
-  <script>
-      window.addEventListener('load', () => {
-      quicklink({
-        timeout: 3000,
-        priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'lider7214.cn/',]
-      });
-      });
-  </script>
 
 </body>
 </html>
